@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ColorSchemeController">
+    <children>
+        <Rectangle fill="#254476" height="74.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+        <Button fx:id="homeButtonId" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: none;" text="Home" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="fractalButtonId" layoutX="614.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Fractal" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="parallelogramButtonId" layoutX="694.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Parallelogram" textFill="WHITE">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Button>
+        <Button fx:id="helpButtonId" layoutX="959.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: none;" text="?" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="25.0" />
+            </font>
+        </Button>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e2f1ff" height="456.0" layoutX="78.0" layoutY="130.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="306.0" />
+      <Button fx:id="loadIngButtonId" layoutX="145.0" layoutY="158.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-radius: 60;" text="Load img">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="transformToHSVButtonId" layoutX="145.0" layoutY="263.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-radius: 60;" text="Transform to HSV">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveImgButtonId" layoutX="145.0" layoutY="209.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="172.0" style="-fx-background-radius: 60;" text="Save img">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
+      <Text layoutX="129.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Green saturation relative value">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Slider fx:id="sliderId" layoutX="129.0" layoutY="359.0" max="255.0" prefHeight="14.0" prefWidth="204.0" value="50.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="131.0" layoutX="109.0" layoutY="430.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="244.0" />
+      <Text layoutX="147.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Image pixel state:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="RGBTextid" layoutX="147.0" layoutY="501.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RGB( 0, 0, 0 )">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="HSVTextId" layoutX="147.0" layoutY="520.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HSV( 0.00, 0.00, 0.00 )">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="218.0" layoutX="530.0" layoutY="130.0" stroke="BLACK" strokeType="INSIDE" width="366.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="218.0" layoutX="530.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="366.0" />
+      <Canvas fx:id="RGBCanvasId" height="218.0" layoutX="530.0" layoutY="130.0" width="366.0" />
+      <Canvas fx:id="HSVCanvasId" height="218.0" layoutX="530.0" layoutY="374.0" width="366.0" />
+      <Text layoutX="165.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Saturation">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <TextField fx:id="saturation_text_id" layoutX="243.0" layoutY="385.0" prefHeight="25.0" prefWidth="45.0" />
+      <Button fx:id="learningButton" layoutX="843.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Learning" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

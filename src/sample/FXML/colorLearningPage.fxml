@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ColorLearningController">
+    <children>
+        <Rectangle fill="#254476" height="74.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="396.0" layoutX="86.0" layoutY="147.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="859.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="45.0" layoutX="378.0" layoutY="87.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
+      <Text layoutX="397.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Color Scheme Theory">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="homeButtonId" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: none;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="fractalLearningButton" layoutX="723.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Fractal" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="paralellogramLearningButton" layoutX="809.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Parallelogram" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToPracticeButton" layoutX="440.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Go to practice">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextStepButton" layoutX="627.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Next step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousStepButton" layoutX="255.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Previous step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="105.0" layoutY="162.0" prefHeight="364.0" prefWidth="819.0" text="   RGB - an additive color model that describes a method of color synthesis in which red, green,&#10;and blue light are superimposed together, mixing into different colors. Widely used in the &#10;technique of reproducing images using light radiation.&#10;   The number of gradations of each channel depends on the bit size of the RGB bit value and&#10;therefore the number of gradations is 256, which allows you to encode 2563 = 16 777 216 colors&#10;&#10;Benefits:&#10;  - Hardware proximity to the monitor, scanner, projector, other devices;&#10;  - Large range of colors, close to the capabilities of human vision;&#10;  - Availability of many image processing functions (filters) in raster graphics programs;&#10;  - Small (compared to the CMYK model) volume, but a wider range of colors.&#10;&#10;Negative:&#10;  - Preservation of the probability of error of color display on the monitor screen - &#10;does not correspond to the colors obtained as a result of color testing.&#10;&#10;   HSV - is a color model based on three color characteristics: color tone (Hue), saturation &#10;(Saturation) and color value (Value), which is also called brightness (Brightness).&#10; - Hue - color tone (for example, red, green or blue).&#10; - Saturation - saturation. Varies between 0-100 or 0-1.&#10; - Value - the value of color, or Brightness - brightness. Also set in the range 0-100 or 0-1.&#10;&#10;Benefits:&#10;  - It is convenient to change color brightness, and also to select a color palette;&#10;  - The color model is human-oriented and the parameters describe the properties of colors &#10;in terms of how a person perceives color&#10;&#10;Negative:&#10;  - Сomponents H and V are dependent, ie the main color depends on the intensity&#10;  - Еhe color model is not hardware-oriented and requires conversion to be displayed">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="116.0" fitWidth="123.0" layoutX="760.0" layoutY="191.0">
+         <image>
+            <Image url="@../photos/RGB-1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="741.0" layoutY="372.0">
+         <image>
+            <Image url="@../photos/HSV_cone.gif" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

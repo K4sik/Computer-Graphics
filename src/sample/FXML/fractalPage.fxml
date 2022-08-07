@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.FractalController">
+    <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="404.0" layoutX="477.0" layoutY="151.0" stroke="BLACK" strokeType="INSIDE" width="487.0" />
+      <Canvas fx:id="canvasId" height="404.0" layoutX="477.0" layoutY="151.0" width="487.0" />
+        <Rectangle fill="#254476" height="74.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+      <Button fx:id="homeButtonId" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: none;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorSchemeButtonId" layoutX="542.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Color Scheme" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="parallelogramButtonId" layoutX="693.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Parallelogram" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="helpButtonId" layoutX="959.0" layoutY="9.0" mnemonicParsing="false" style="-fx-background-color: none;" text="?" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#e2f1ff" height="405.0" layoutX="81.0" layoutY="150.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="306.0" />
+      <Text layoutX="165.0" layoutY="193.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Koch Fractal">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Text>
+      <TextField fx:id="countOfIterationTextField" layoutX="281.0" layoutY="260.0" prefHeight="30.0" prefWidth="35.0" style="-fx-background-radius: 20; -fx-background-color: EFEDED;" text="">
+          <effect>
+              <InnerShadow color="gray" offsetX="0.0" offsetY="1.0" />
+          </effect>
+      </TextField>
+      <TextField fx:id="second" layoutX="268.0" layoutY="302.0" prefHeight="30.0" prefWidth="35.0" style="-fx-background-radius: 20; -fx-background-color: EFEDED;" text="">
+          <effect>
+              <InnerShadow color="gray" offsetX="0.0" offsetY="1.0" />
+          </effect>
+      </TextField>
+      <ComboBox fx:id="comboBox" layoutX="148.0" layoutY="216.0" prefHeight="25.0" prefWidth="170.0" promptText="Choose a base figure" style="-fx-background-radius: 50;">
+          <items>
+              <FXCollections fx:factory="observableArrayList">
+                  <String fx:id="triangle" fx:value="Triangle" />
+                  <String fx:id="quadrate" fx:value="Quadrate" />
+              </FXCollections>
+          </items>
+      </ComboBox>
+      <Button fx:id="startButtonId" layoutX="155.0" layoutY="432.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="158.0" style="-fx-background-radius: 50;" text="Start">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="saveButtonId" layoutX="154.0" layoutY="488.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="158.0" style="-fx-background-radius: 50;" text="Save image">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Text layoutX="150.0" layoutY="281.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Count of iterarion" wrappingWidth="138.375">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Text>
+      <Text fx:id="ratioText" layoutX="172.0" layoutY="323.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ratio" wrappingWidth="63.609375">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Text>
+      <TextField fx:id="first" layoutX="219.0" layoutY="302.0" prefHeight="30.0" prefWidth="35.0" style="-fx-background-radius: 20; -fx-background-color: EFEDED;" text="">
+         <effect>
+            <InnerShadow color="gray" offsetX="0.0" offsetY="1.0" />
+         </effect>
+      </TextField>
+      <Line fx:id="slashLineId" endX="-69.0" endY="-30.0" layoutX="337.0" layoutY="332.0" startX="-83.0" />
+      <CheckBox fx:id="checkBoxId" layoutX="157.0" layoutY="387.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="158.0" text="Build Fractal Inside">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <CheckBox fx:id="changeRatio" layoutX="158.0" layoutY="353.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="158.0" text="Change Ratio To">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </CheckBox>
+      <Label fx:id="dropmenuhover" layoutX="285.0" layoutY="241.0" prefHeight="17.0" prefWidth="78.0" style="-fx-background-color: FFFFFF; visibility: false;" text="Choose figure" textAlignment="CENTER" />
+      <Label fx:id="counthover" layoutX="285.0" layoutY="293.0" prefHeight="17.0" prefWidth="158.0" style="-fx-background-color: FFFFFF; visibility: false;" text="Enter number between 1-10" textAlignment="CENTER" />
+      <Label fx:id="secondhover" layoutX="273.0" layoutY="333.0" prefHeight="17.0" prefWidth="158.0" style="-fx-background-color: FFFFFF; visibility: false;" text="Enter number between 1-10" textAlignment="CENTER" />
+      <Label fx:id="firsthover" layoutX="222.0" layoutY="333.0" prefHeight="17.0" prefWidth="158.0" style="-fx-background-color: FFFFFF; visibility: false;" text="Enter number between 1-10" textAlignment="CENTER" />
+      <Button fx:id="learningButton" layoutX="843.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Learning" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>

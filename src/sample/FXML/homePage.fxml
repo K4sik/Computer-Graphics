@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.HomePageController">
+   <children>
+      <Rectangle fill="#254476" height="59.0" layoutY="592.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+      <ImageView fx:id="fractalImg" fitHeight="120.0" fitWidth="119.0" layoutX="243.0" layoutY="371.0">
+         <image>
+            <Image url="@../photos/512px-Koch_Snowflake_7th_iteration.svg.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="colorImg" fitHeight="120.0" fitWidth="119.0" layoutX="456.0" layoutY="370.0">
+         <image>
+            <Image url="@../photos/photo_2020-11-10_21-00-56-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="parallelogramImg" fitHeight="91.0" fitWidth="159.0" layoutX="669.0" layoutY="385.0">
+         <image>
+            <Image url="@../photos/photo_2020-11-10_21-02-59-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#6b0d98" layoutX="516.0" layoutY="207.0" radius="119.0" stroke="BLACK" strokeType="INSIDE" />
+      <Text fill="WHITE" layoutX="463.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="K" textAlignment="CENTER" wrappingWidth="87.87927119377161">
+         <font>
+            <Font name="Times New Roman" size="150.0" />
+         </font>
+      </Text>
+      <Button fx:id="fractalButtonid" layoutX="260.0" layoutY="509.0" mnemonicParsing="false" style="-fx-background-color: E2F1FF; -fx-background-radius: 0; -fx-border-color: BLACK;" text="Fraktals">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="colorSchemeButtonid" layoutX="449.0" layoutY="509.0" mnemonicParsing="false" style="-fx-background-color: E2F1FF; -fx-background-radius: 0; -fx-border-color: BLACK;" text="Color Scheme">
+         <font>
+            <Font size="18.0" />
+         </font></Button>
+      <Button fx:id="parallelogramButtonid" layoutX="689.0" layoutY="509.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="119.0" style="-fx-background-color: E2F1FF; -fx-background-radius: 0; -fx-border-color: BLACK;" text="Affine">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="learningButton" layoutX="873.0" layoutY="26.0" mnemonicParsing="false" prefHeight="41.0" prefWidth="119.0" style="-fx-background-color: E2F1FF; -fx-background-radius: 0; -fx-border-color: BLACK;" text="Learning">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

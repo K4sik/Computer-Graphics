@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.ParalLearningController">
+    <children>
+        <Rectangle fill="#254476" height="74.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="396.0" layoutX="86.0" layoutY="147.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="859.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="45.0" layoutX="378.0" layoutY="87.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="275.0" />
+      <Text layoutX="397.0" layoutY="119.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Parallelogram Theory">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="homeButtonId" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: none;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorLearningButton" layoutX="818.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Color Scheme" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="fractalLearningButton" layoutX="732.0" layoutY="14.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Fractal" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="goToPracticeButton" layoutX="440.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Go to practice">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextStepButton" layoutX="627.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Next step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousStepButton" layoutX="255.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Previous step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea fx:id="textArea" layoutX="114.0" layoutY="170.0" prefHeight="351.0" prefWidth="802.0" text="   Parallelogram&#10;   A parallelogram is a quadrilateral in which the opposite sides &#10;are paired in pairs (lying on parallel lines).&#10;   Parallelograms differ in both the size of the adjacent sides &#10;and the angles, but the opposite angles are the same.&#10;   A quadrilateral ABCD will be a parallelogram if at least one of &#10;the following conditions is met:&#10;   1. A quadrilateral has two pairs of parallel sides;&#10;   2. A quadrilateral has a pair of parallel and equal sides;&#10;   3. In a quadrilateral, the opposite sides are equal in pairs;&#10;   4. In a quadrilateral, the opposite angles are equal in pairs;&#10;   5. In a quadrilateral, the diagonals are bisected by the point &#10;of intersection;&#10;   6. The sum of the angles of the quadrilateral adjacent to&#10; either side is 180 °;&#10;&#10;   Affine transformation&#10;To perform operations of rotation and reduction of the figure &#10;relative to the point, we need to make the optimal matrix expression:&#10;&#10;        1  0  0        cos(a)  -sin(a)   0          1/s   0   0          1   0   0&#10;M=  0  1  0   X    sin(a)   cos(a)   0    X     0  1/s  0    X    0   1   0&#10;     -m -n  1           0           0      1            0    0   1          m  n  1&#10;">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextArea>
+      <ImageView fitHeight="141.0" fitWidth="247.0" layoutX="627.0" layoutY="245.0">
+         <image>
+            <Image url="@../photos/photo_2020-11-10_21-02-59-removebg-preview.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

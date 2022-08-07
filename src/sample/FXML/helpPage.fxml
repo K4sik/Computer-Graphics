@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.HelpController">
+    <children>
+        <Rectangle fill="#254476" height="74.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="396.0" layoutX="86.0" layoutY="147.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="859.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="45.0" layoutX="397.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="238.0" />
+      <Text layoutX="427.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fractal Interface">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Button fx:id="goToPracticeButton" layoutX="440.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Go to video">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextStepButton" layoutX="627.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Next step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeButtonId" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: none;" text="Back" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorLearningButton" layoutX="645.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Color Scheme" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="paralellogramLearningButton" layoutX="809.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Parallelogram" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousStepButton" layoutX="255.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Previous step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="112.0" layoutY="173.0" prefHeight="345.0" prefWidth="805.0" text="   In front of you is a drop-down menu.&#10;   In it you have to choose the base shape - a triangle and a square.&#10;   Next you need to enter the number of iterations (this is the depth of the fractal) and &#10;the number of lines into which you want to divide the line.&#10;   To build a fractal you need to click on the &quot;Start&quot; button. If you need to save the results, &#10;you can click on the &quot;Save image in .PNG&quot; button.&#10;&#10;  For more information follow the link:&#10;  https://youtube.com/playlist?list=PLnYLg8e07wCmAC0iDBESGMOxmDf2I0O9z&#10;  or press &quot;Go to video&quot;">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>

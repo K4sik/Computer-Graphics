@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="anchorPaneid" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="651.0" prefWidth="1030.0" style="-fx-background-color: A5B9D7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.frLrP2">
+    <children>
+        <Rectangle fill="#254476" height="74.0" stroke="BLACK" strokeType="INSIDE" width="1030.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="396.0" layoutX="86.0" layoutY="147.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="859.0" />
+      <Rectangle arcHeight="50.0" arcWidth="50.0" fill="WHITE" height="45.0" layoutX="397.0" layoutY="86.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="0.0" width="238.0" />
+      <ImageView fitHeight="188.0" fitWidth="188.0" layoutX="721.0" layoutY="246.0">
+         <image>
+            <Image url="@../photos/Koch.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="131.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="134.0" layoutY="283.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="132.0" layoutY="335.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="444.0" layoutY="118.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Fractal Theory">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="131.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="134.0" layoutY="309.0" strokeType="OUTSIDE" strokeWidth="0.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="goToPracticeButton" layoutX="440.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Go to practice">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="nextStepButton" layoutX="627.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Next step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="homeButtonId" layoutX="54.0" layoutY="14.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="102.0" style="-fx-background-color: none;" text="Home" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="colorLearningButton" layoutX="645.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Color Scheme" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="paralellogramLearningButton" layoutX="809.0" layoutY="15.0" mnemonicParsing="false" style="-fx-background-color: none;" text="Parallelogram" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="previousStepButton" layoutX="255.0" layoutY="576.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="171.0" style="-fx-background-radius: 50;" text="Previous step">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <TextArea layoutX="118.0" layoutY="220.0" prefHeight="216.0" prefWidth="595.0" text="The Koch curve is interesting in that it has no tangents anywhere, &#10;that is, it is nowhere differentiable, although it is continuous everywhere&#10;&#10;The Koch curve is a typical geometric fractal. &#10;The process of its construction looks like this: take a. single segment, &#10;divide it into three equal parts and replace the middle interval &#10;with an equilateral triangle without this segment. ">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextArea>
+    </children>
+</AnchorPane>
